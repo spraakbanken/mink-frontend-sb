@@ -1,10 +1,14 @@
 import type { Plugin } from "vue";
 import SbMinkLogo from "./components/SbMinkLogo.vue";
+import appConfig from "./config.yaml";
 import i18n, { languageNames } from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
 
 export default function createPlugin(): Plugin {
   return (app) => {
+    // Use app config object from YAML file
+    app.provide(injectionKeys.config, appConfig);
+
     // Override an overridable component
     app.provide(injectionKeys.component.MinkLogo, SbMinkLogo);
 

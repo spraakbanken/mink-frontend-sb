@@ -1,0 +1,10 @@
+# Structure must match the `AppConfig` type
+types:
+  corpus:
+    explore:
+      korp: true
+      strix: true
+  metadata: true
+tools:
+  metadataEditor: true
+sharing: true
