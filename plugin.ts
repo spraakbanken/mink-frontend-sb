@@ -2,15 +2,11 @@ import type { Plugin } from "vue";
 import SbMinkLogo from "./components/SbMinkLogo.vue";
 import i18n, { languageNames } from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
-import newsService from "./news.service";
 
 export default function createPlugin(): Plugin {
   return (app) => {
     // Override an overridable component
     app.provide(injectionKeys.component.MinkLogo, SbMinkLogo);
-
-    // Provide service
-    app.provide(injectionKeys.service.news, newsService);
 
     // Prefer Swedish if it's among browser's preferred languages, even if English is ranked higher
     const isSvPreferred = navigator.languages.find((l) => /^sv\b/.test(l));
@@ -23,7 +19,8 @@ export default function createPlugin(): Plugin {
 
     // Add a language
     import("@instance/locales/es.yaml").then((module) => {
-      i18n.global.setLocaleMessage("es", module.default);
+      const messages = module.default as Record<string, string>;
+      i18n.global.setLocaleMessage("es", messages);
       languageNames.es = "Español";
     });
   };

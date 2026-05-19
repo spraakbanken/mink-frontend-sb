@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
-import logo from "@/assets/mink.svg";
-import logoLight from "@/assets/mink-light.svg";
 import logoSlogan from "@instance/img/mink-slogan.svg";
 import logoSloganEn from "@instance/img/mink-slogan-en.svg";
 import logoLightSlogan from "@instance/img/mink-light-slogan.svg";
 import logoLightSloganEn from "@instance/img/mink-light-slogan-en.svg";
+import logoLight from "@/assets/mink-light.svg";
+import logo from "@/assets/mink.svg";
 
 const props = defineProps<{
   large: boolean;
