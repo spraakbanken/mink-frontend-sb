@@ -3,13 +3,18 @@ import SbMinkLogo from "./components/SbMinkLogo.vue";
 import appConfig from "./config.yaml";
 import i18n, { languageNames } from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
+import { SbAnalysisRegistryService } from "./services/SbAnalysisRegistryService";
 
 export default function createPlugin(): Plugin {
   return (app) => {
     // Use app config object from YAML file
     app.provide(injectionKeys.config, appConfig);
 
-    // Override an overridable component
+    // Provide services and components
+    app.provide(
+      injectionKeys.service.analysisRegistry,
+      new SbAnalysisRegistryService(),
+    );
     app.provide(injectionKeys.component.MinkLogo, SbMinkLogo);
 
     // Prefer Swedish if it's among browser's preferred languages, even if English is ranked higher
