@@ -1,6 +1,8 @@
 import type { Plugin } from "vue";
 import appConfig from "./config.yaml";
-import i18n, { languageNames } from "@/i18n/i18n";
+import en from "./locales/en.yaml";
+import sv from "./locales/sv.yaml";
+import i18n from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
 import { SbAnalysisRegistryService } from "./services/SbAnalysisRegistryService";
 
@@ -35,16 +37,8 @@ export default function createPlugin(): Plugin {
     const isSvPreferred = navigator.languages.find((l) => /^sv\b/.test(l));
     i18n.global.locale.value = isSvPreferred ? "sv" : "en";
 
-    // Modify a language
-    import("./locales/sv.yaml").then((module) => {
-      i18n.global.mergeLocaleMessage("sv", module.default);
-    });
-
-    // Add a language
-    import("./locales/es.yaml").then((module) => {
-      const messages = module.default as Record<string, string>;
-      i18n.global.setLocaleMessage("es", messages);
-      languageNames.es = "Español";
-    });
+    // Modify languages
+    i18n.global.mergeLocaleMessage("sv", sv);
+    i18n.global.mergeLocaleMessage("en", en);
   };
 }
