@@ -12,7 +12,7 @@ const { locale } = useI18n();
         <div>
           <a :href="$t('links.sbx.url')" target="_blank">
             <img
-              src="@/assets/sprakbankentext-light.svg"
+              src="../img/sprakbankentext-light.svg"
               alt="Språkbanken Text"
               class="inline-block mb-2 h-8"
             />
@@ -53,13 +53,13 @@ const { locale } = useI18n();
         <a :href="$t('links.gu.url')" target="_blank">
           <img
             v-if="locale == 'sv'"
-            src="@/assets/gu-logo-white-sv.svg"
+            src="../img/gu-logo-white-sv.svg"
             alt="Göteborgs universitet"
             class="inline-block mb-2"
           />
           <img
             v-else
-            src="@/assets/gu-logo-white-en.svg"
+            src="../img/gu-logo-white-en.svg"
             alt="University of Gothenburg"
             class="inline-block mb-2"
           />

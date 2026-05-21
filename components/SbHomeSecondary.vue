@@ -14,7 +14,7 @@ import LayoutSection from "@/components/LayoutSection.vue";
           class="md:w-1/2 2xl:w-4/5 shadow-lg hover:scale-110 transition-transform"
         >
           <img
-            src="@/assets/sparv-screen.png"
+            src="../img/sparv-screen.png"
             :alt="$t('home.features.sparv.alt')"
           />
         </figure>
@@ -37,7 +37,7 @@ import LayoutSection from "@/components/LayoutSection.vue";
         <figure
           class="md:w-1/2 2xl:w-4/5 shadow-lg hover:scale-110 transition-transform"
         >
-          <img src="@/assets/texts.png" :alt="$t('home.features.upload.alt')" />
+          <img src="../img/texts.png" :alt="$t('home.features.upload.alt')" />
         </figure>
 
         <LayoutSection
@@ -66,7 +66,7 @@ import LayoutSection from "@/components/LayoutSection.vue";
           class="md:w-1/2 2xl:w-4/5 shadow-lg hover:scale-110 transition-transform"
         >
           <img
-            src="@/assets/korp-screen.png"
+            src="../img/korp-screen.png"
             :alt="$t('home.features.explore.alt')"
           />
         </figure>
@@ -99,7 +99,7 @@ import LayoutSection from "@/components/LayoutSection.vue";
         <figure
           class="md:w-1/2 2xl:w-4/5 shadow-lg hover:scale-110 transition-transform"
         >
-          <img src="@/assets/share.png" :alt="$t('home.features.share.alt')" />
+          <img src="../img/share.png" :alt="$t('home.features.share.alt')" />
         </figure>
 
         <LayoutSection
