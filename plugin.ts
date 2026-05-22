@@ -5,6 +5,7 @@ import sv from "./locales/sv.yaml";
 import i18n from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
 import { SbAnalysisRegistryService } from "./services/SbAnalysisRegistryService";
+import { SbNewsService } from "./services/news.service";
 
 export default function createPlugin(): Plugin {
   return (app) => {
@@ -16,6 +17,7 @@ export default function createPlugin(): Plugin {
       injectionKeys.service.analysisRegistry,
       new SbAnalysisRegistryService(),
     );
+    app.provide(injectionKeys.service.news, new SbNewsService());
     app.provide(
       injectionKeys.component.MinkLogo,
       () => import("./components/SbMinkLogo.vue"),
