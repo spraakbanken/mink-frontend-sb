@@ -6,6 +6,7 @@ import i18n from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
 import { SbAnalysisRegistryService } from "./services/SbAnalysisRegistryService";
 import { SbNewsService } from "./services/news.service";
+import "./instance.css";
 
 export default function createPlugin(): Plugin {
   return (app) => {

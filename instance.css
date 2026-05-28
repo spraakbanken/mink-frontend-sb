@@ -1,0 +1,7 @@
+@layer base {
+  /* Example on how to override theme variables in the instance
+  body {
+    --color-primary-600: green;
+  }
+  */
+}
