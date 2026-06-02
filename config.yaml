@@ -4,6 +4,7 @@ types:
     explore:
       korp: true
       strix: true
+  lexicon: true
   metadata: true
 tools:
   metadataEditor: true
