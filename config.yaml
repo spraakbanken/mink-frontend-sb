@@ -1,11 +1,25 @@
 # Structure must match the `AppConfig` type
+backendUrl: https://ws.spraakbanken.gu.se/ws/mink/v2/
+
+auth:
+  apiUrl: https://sp.spraakbanken.gu.se/auth/
+  guiUrl: https://spraakbanken.gu.se/auth/
+  logoutUrl: https://sp.spraakbanken.gu.se/Shibboleth.sso/Logout
+
 types:
   corpus:
     explore:
-      korp: true
-      strix: true
-  lexicon: true
+      korp:
+        url: https://spraakbanken.gu.se/korp
+      strix:
+        url: https://spraakbanken.gu.se/strix
+  lexicon:
+    karps:
+      url: https://spraakbanken.gu.se/karplabb
+    minkUrl: https://spraakbanken.gu.se/mink
   metadata: true
+
+sharing: true
+
 tools:
   metadataEditor: true
-sharing: true

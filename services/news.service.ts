@@ -3,7 +3,8 @@ import { addDays, retry } from "@/util";
 import type { ByLang } from "@/util.types";
 import type { NewsService } from "@/news/news.types";
 
-const NEWS_URL: string = import.meta.env.VITE_NEWS_URL;
+const NEWS_URL: string =
+  "https://raw.githubusercontent.com/spraakbanken/newsdesk/main/data/mink.yaml";
 
 /** A news item in the Newsdesk repo */
 export type NewsItem = {
