@@ -1,5 +1,6 @@
 import type { Plugin } from "vue";
-import appConfigRaw from "./config.yaml";
+import appConfig from "./config.yaml";
+import appConfigLab from "./config.lab.yaml";
 import en from "./locales/en.yaml";
 import sv from "./locales/sv.yaml";
 import i18n from "@/i18n/i18n";
@@ -8,18 +9,17 @@ import { SbAnalysisRegistryService } from "./services/SbAnalysisRegistryService"
 import { SbNewsService } from "./services/news.service";
 import "./instance.css";
 import type { AppConfig } from "@/app/config.types.ts";
+import { merge } from "es-toolkit";
 
 const env = import.meta.env;
 
 export default function createPlugin(): Plugin {
   return (app) => {
-    const appConfig = appConfigRaw as AppConfig;
-
-    // Let local env override backend URL
-    if (env.VITE_BACKEND_URL) appConfig.backendUrl = env.VITE_BACKEND_URL;
+    // Patch config in lab mode
+    if (env.VITE_LAB) merge(appConfig, appConfigLab);
 
     // Use app config object from YAML file
-    app.provide(injectionKeys.config, appConfig);
+    app.provide(injectionKeys.config, appConfig as AppConfig);
 
     // Provide services and components
     app.provide(
