@@ -1,3 +1,5 @@
+footer.contact.intro: Använder du våra plattformar, datamängder eller analyser i ditt arbete? Då vill vi gärna höra från dig!
+
 home.hero.sb: "{0} är en forskningsinfrastruktur för språkdata. Med språkteknologiska metoder i framkant skapar vi och underhåller språkresurser för forskare världen över, och vi använder fri och öppen access såvitt det går."
 home.hero.mink: "{0} är vår insats för att lägga infrastrukturen i forskarnas händer. Här kan du applicera våra språkteknologiska metoder på texter som du själv har samlat in. Resultaten kan du ladda ner eller föra in i våra forskningsverktyg såsom Korp och Strix bakom inloggning."
 home.hero.privacy: Dina resurser är privata för dig och dem du själv bjuder in (se {0}). I kommande versioner kommer du att kunna publicera datamängder för allmän åtkomst.
@@ -28,6 +30,8 @@ home.otherdata.sbdata.title: "Språkbanken Text: Datamängder"
 links.sbx.url: https://spraakbanken.gu.se/
 links.gu.label: Göteborgs universitet
 links.gu.url: https://gu.se/
+links.cite.label: Referera till oss
+links.cite.url: https://spraakbanken.gu.se/om/referera#Korp
 links.contact.label: Kontakta oss
 links.contact.url: https://spraakbanken.gu.se/kontakt
 links.about.label: Om oss

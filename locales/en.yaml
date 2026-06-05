@@ -1,3 +1,5 @@
+footer.contact.intro: Are you using our platforms, datasets or analyses in your work? We would like to hear from you!
+
 home.hero.sb: "{0} is a research infrastructure for language data. We create and maintain language data analysed with state-of-the-art language technology methods for researchers everywhere, and take pride in providing free and open access where possible."
 home.hero.mink: "{0} is our effort to put Språkbanken Text’s research infrastructure into the hands of the researchers. You can use Mink to apply our language technology methods on texts that you have collected yourself. The resulting data can be downloaded or made available through our research tools, such as Korp and Strix, behind login."
 home.hero.privacy: Your resources are private to you and those you explicitly invite (see {0}). Forthcoming versions will include the possibility to publish datasets openly.
@@ -28,6 +30,8 @@ home.otherdata.sbdata.title: "Språkbanken Text: Language resources"
 links.sbx.url: https://spraakbanken.gu.se/en
 links.gu.label: University of Gothenburg
 links.gu.url: https://gu.se/en
+links.cite.label: Cite us
+links.cite.url: https://spraakbanken.gu.se/en/about/howtocite#Korp
 links.contact.label: Contact us
 links.contact.url: https://spraakbanken.gu.se/en/contact
 links.about.label: About us

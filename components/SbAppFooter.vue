@@ -6,7 +6,7 @@ const { locale } = useI18n();
 
 <template>
   <footer class="mt-10 shadow-sm bg-zinc-800 text-zinc-200">
-    <div class="container py-20 grid lg:grid-cols-3 gap-12 text-center">
+    <div class="container py-14 grid lg:grid-cols-3 gap-12 text-center">
       <!-- Left -->
       <div class="lg:text-start">
         <div>
@@ -39,10 +39,18 @@ const { locale } = useI18n();
 
       <!-- Center -->
       <div>
-        <ul>
+        <p>
+          {{ $t("footer.contact.intro") }}
+        </p>
+        <ul class="list-unstyled">
           <li>
             <a :href="$t('links.contact.url')" target="_blank">
               {{ $t("links.contact.label") }}
+            </a>
+          </li>
+          <li>
+            <a :href="$t('links.cite.url')" target="_blank">
+              {{ $t("links.cite.label") }}
             </a>
           </li>
         </ul>
