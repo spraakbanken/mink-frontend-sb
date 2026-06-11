@@ -6,9 +6,9 @@ import sv from "./locales/sv.yaml";
 import i18n from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
 import { SbAnalysisRegistryService } from "./services/SbAnalysisRegistryService";
-import { SbNewsService } from "./services/news.service";
+import { SbNewsService } from "./services/SbNewsService";
 import "./instance.css";
-import type { AppConfig } from "@/app/config.types.ts";
+import type { AppConfig } from "@/app/config.types";
 import { merge } from "es-toolkit";
 
 const env = import.meta.env;
