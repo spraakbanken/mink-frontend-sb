@@ -1,29 +1,42 @@
 footer.contact.intro: Använder du våra plattformar, datamängder eller analyser i ditt arbete? Då vill vi gärna höra från dig!
 
-home.hero.sb: "{0} är en forskningsinfrastruktur för språkdata. Med språkteknologiska metoder i framkant skapar vi och underhåller språkresurser för forskare världen över, och vi använder fri och öppen access såvitt det går."
-home.hero.mink: "{0} är vår insats för att lägga infrastrukturen i forskarnas händer. Här kan du applicera våra språkteknologiska metoder på texter som du själv har samlat in. Resultaten kan du ladda ner eller föra in i våra forskningsverktyg såsom Korp och Strix bakom inloggning."
-home.hero.privacy: Dina resurser är privata för dig och dem du själv bjuder in (se {0}). I kommande versioner kommer du att kunna publicera datamängder för allmän åtkomst.
-home.hero.privacy.link.url: https://spraakbanken.gu.se/verktyg/mink/data-policy
-home.hero.privacy.link.label: integritets- och datapolicyn
-home.hero.readmore: Läs mer i {0}.
-home.hero.readmore.link.label: Minks dokumentation
-home.features.sparv.title: Anpassningsbara analyser
-home.features.sparv.body: Dina texter analyseras av vår språkteknologiska plattform {sparv} med de inställningar du väljer.
-home.features.sparv.alt: Skärmbild av en konfigurationssida många knappar
-home.features.upload.title: Ladda upp din text
-home.features.upload.body: Ladda upp textfiler, XML eller ljudinspelningar.
-home.features.upload.xml: "Om du använder XML läggs analyserna in utan att påverka strukturen från originalfilerna: {link}"
-home.features.upload.xml.link.url: https://spraakbanken.gu.se/blogg/20240820-anvand-mink-med-egen-berikning-i-kalldata
-home.features.upload.xml.link.label: Använd Mink med egen berikning i källdata
-home.features.upload.alt: Skärmbild av en lista med filnamn och en uppladdningsruta
-home.features.explore.title: Utforska i Korp och Strix
-home.features.explore.body: Exportera den färdiga datan för sökning och statistiska undersökningar i {korp} och {strix}.
-home.features.explore.alt: Skärmbild från sökverktyget Korp
-home.features.share.title: Dela och samarbeta
-home.features.share.body: Bjud in andra forskare att ta del av dina data i våra forskningsverktyg, skyddat bakom inloggning. Om du vill göra dina data tillgängliga för alla kan du kontakta oss för att diskutera publicering.
-home.features.share.alt: Skärmbild från ett behörighetshanteringssystem
-home.otherdata.title: Mink eller icke Mink?
+home.hero.subtitle: Använd Språkbankens analyser och plattformar för din egen data
+home.hero.sb: "{0} stödjer forskning genom att tillgängliggöra data och utveckla språkteknologiska analyser och forskningsplattformar."
+home.hero.mink: "Med {0} kan du använda analyserna och plattformarna för dataresurser som du själv skapar."
+home.hero.workflow: ""
+home.hero.workflow.create: Skapa {corpora} och {lexicons} från dina källfiler
+home.hero.workflow.create.corpora: korpusar
+home.hero.workflow.create.lexicons: lexikon
+home.hero.workflow.run: Konfigurera och kör analyser
+home.hero.workflow.download: Ladda ner resultatfiler
+home.hero.workflow.install: Installera resultat i andra plattformar
+home.hero.workflow.invite: Bjud in utvalda kollegor att utforska eller redigera resurser
+home.features.title: Vad kan jag göra med Mink?
+home.features.upload: Ladda upp din data i format som Word, PDF och XML
+home.features.annotations: Berika automatiskt med annoteringar som grundform, ordklass, dependenser och NER
+home.features.install: Installera i Korp/Strix och få tillgång till konkordanser, statistik, semantisk visualisering med mera
+home.features.lexicons: Skapa lexikon och installera i Karp för att söka och jämföra med andra öppna lexikon
+home.features.privacy: Dina resurser är privata för dig och dem du själv bjuder in. Hör av dig om du vill bidra med din data till forskningen!
+home.features.code: Vi älskar fri och öppen tillgång, och det gäller även källkod. Kolla in våra {repos} för att undersöka eller bidra, och lär dig hur din institution kan drifta en egen Mink-instans!
+home.features.code.repos: kodrepositorier
+home.links.title: Länkar
+home.links.tutorial: En snabb genomgång av hur du skapar och utforskar en exempelkorpus
+home.links.tutorial.label: Övningsexempel
+home.links.tutorial.url: https://spraakbanken.gu.se/verktyg/mink/tutorial
+home.links.manual: Scrolla igenom för en noggrannare genomgång av plattformens funktionalitet, och spara som en referens till senare
+home.links.manual.label: Användarhandledning (engelska)
+home.links.manual.url: https://spraakbanken.gu.se/verktyg/mink/manual
+home.links.privacy.label: Integritets- och datapolicy (engelska)
+home.links.privacy.url: https://spraakbanken.gu.se/verktyg/mink/data-policy
+home.links.api: Använd Mink i din egen kod
+home.links.api.label: API (engelska)
+home.links.api.url: https://ws.spraakbanken.gu.se/docs/mink
+home.links.resources: Bläddra igenom vår omfattande samling av öppna (och skyddade) dataset
+home.links.resources.label: Datamängder
+home.links.resources.url: https://spraakbanken.gu.se/resurser
+home.otherdata.title: Mink eller inte Mink?
 home.otherdata.body: Tänk på att först undersöka andra språkdatamängder som eventuellt uppfyller dina behov! Språkbankens växande samling av forskningsdata kan du se på sidan {0} på vår webbplats. I ett större perspektiv bildar Språkbanken en del av CLARIN ERIC, vars samlade data kan utforskas i {1}.
+home.otherdata.sbdata.label: Datamängder
 home.otherdata.sbdata.url: "https://spraakbanken.gu.se/resurser"
 home.otherdata.sbdata.title: "Språkbanken Text: Datamängder"
 
