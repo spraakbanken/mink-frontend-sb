@@ -1,6 +1,5 @@
 import { once } from "es-toolkit";
-import { pathJoin } from "@/util";
-import type { ByLang } from "@/util.types";
+import { pathJoin, type ByLang } from "@/util";
 import type {
   AnalysisId,
   AnalysisRegistryService,
