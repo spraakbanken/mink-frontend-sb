@@ -5,7 +5,6 @@ import en from "./locales/en.yaml";
 import sv from "./locales/sv.yaml";
 import i18n from "@/i18n/i18n";
 import { injectionKeys } from "@/injection";
-import { SbAnalysisRegistryService } from "./services/SbAnalysisRegistryService";
 import { SbNewsService } from "./services/SbNewsService";
 import "./instance.css";
 import type { AppConfig } from "@/app/config.types";
@@ -22,10 +21,6 @@ export default function createPlugin(): Plugin {
     app.provide(injectionKeys.config, appConfig as AppConfig);
 
     // Provide services and components
-    app.provide(
-      injectionKeys.service.analysisRegistry,
-      new SbAnalysisRegistryService(),
-    );
     app.provide(injectionKeys.service.news, new SbNewsService());
     app.provide(
       injectionKeys.component.MinkLogo,
