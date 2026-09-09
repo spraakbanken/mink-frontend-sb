@@ -1,5 +1,5 @@
 import { once } from "es-toolkit";
-import { pathJoin, type ByLang } from "@/util";
+import { type ByLang } from "@/util";
 import type {
   AnalysisId,
   AnalysisRegistryService,
@@ -7,8 +7,9 @@ import type {
 
 export class SbAnalysisRegistryService implements AnalysisRegistryService {
   loadMetadata = once(async () => {
-    const url = "https://ws.spraakbanken.gu.se/ws/metadata/v3/";
-    const response = await fetch(pathJoin(url, "analyses"));
+    const url =
+      "https://ws.spraakbanken.gu.se/ws/metadata/v4/?resource-type=analysis";
+    const response = await fetch(url);
     const data = (await response.json()) as AnalysisMetadataResponse;
 
     // Only keep analyses relevant to Mink
