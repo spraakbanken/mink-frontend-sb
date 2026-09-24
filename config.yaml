@@ -23,4 +23,5 @@ types:
 sharing: true
 
 tools:
+  demo: true
   metadataEditor: true
