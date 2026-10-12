@@ -15,6 +15,7 @@ types:
         - sbx-swe-geotagcontext-sparv # Requires NER
         - sbx-swe-geotagmetadata-sparv # Requires NER and config
         - sbx-swe-namedentity-swener # Slow
+        - sbx-swe-dependency-malt-treebank # Conflicts with Stanza
     explore:
       korp:
         url: https://spraakbanken.gu.se/korp
