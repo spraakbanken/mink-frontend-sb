@@ -22,34 +22,31 @@ home.features.code.repos: code repositories
 home.links.title: Links
 home.links.tutorial: A quick walkthrough on how to create and explore a sample corpus
 home.links.tutorial.label: Tutorial
-home.links.tutorial.url: https://spraakbanken.gu.se/en/tools/mink/tutorial
+home.links.tutorial.url: https://sprakbanken.se/en/platforms/mink/tutorial
 home.links.manual: Scroll through for a more detailed feature overview, and keep as a reference for later
 home.links.manual.label: User manual
-home.links.manual.url: https://spraakbanken.gu.se/en/tools/mink/manual
+home.links.manual.url: https://sprakbanken.se/en/platforms/mink/manual
 home.links.privacy.label: Privacy and data policy
-home.links.privacy.url: https://spraakbanken.gu.se/en/tools/mink/data-policy
+home.links.privacy.url: https://sprakbanken.se/en/platforms/mink/data-policy
 home.links.api: Use Mink in your own code
 home.links.api.label: API
 home.links.api.url: https://ws.spraakbanken.gu.se/docs/mink
 home.links.resources: Browse our extensive set of mostly open datasets
 home.links.resources.label: Language resources
-home.links.resources.url: https://spraakbanken.gu.se/en/resources
+home.links.resources.url: https://sprakbanken.se/en/resources
 home.otherdata.title: To Mink or not to Mink?
 home.otherdata.body: Make sure to first get acquainted with any existing language data sets related to your interests! Språkbanken's growing collection of research data can be browsed on the {0} section of our website. At a larger scale, Språkbanken forms a part of the CLARIN ERIC, whose collected assortment of data can be browsed in the {1}.
-home.otherdata.sbdata.label: Language resources
-home.otherdata.sbdata.url: "https://spraakbanken.gu.se/en/resources"
-home.otherdata.sbdata.title: "Språkbanken Text: Language resources"
 
-links.sbx.url: https://spraakbanken.gu.se/en
+links.sbx.url: https://sprakbanken.se/en
 links.gu.label: University of Gothenburg
 links.gu.url: https://gu.se/en
 links.cite.label: Cite us
-links.cite.url: https://spraakbanken.gu.se/en/about/howtocite#Korp
+links.cite.url: https://sprakbanken.se/en/about/how-to-cite#Mink
 links.contact.label: Contact us
-links.contact.url: https://spraakbanken.gu.se/en/contact
+links.contact.url: https://sprakbanken.se/en/contact
 links.about.label: About us
-links.about.url: https://spraakbanken.gu.se/en/about
+links.about.url: https://sprakbanken.se/en/about
 links.news.label: News
-links.news.url: https://spraakbanken.gu.se/en/news-and-events
+links.news.url: https://sprakbanken.se/en/news-and-events
 links.platforms.label: Other platforms
-links.platforms.url: https://spraakbanken.gu.se/en/tools
+links.platforms.url: https://sprakbanken.se/en/platforms

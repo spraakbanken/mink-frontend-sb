@@ -73,7 +73,7 @@ import {
 
       <li>
         <a
-          href="https://spraakbanken.gu.se/en/tools/mink/manual"
+          href="https://sprakbanken.se/en/platforms/mink/manual"
           target="_blank"
         >
           <strong>{{ $t("home.links.manual.label") }}</strong>
@@ -83,7 +83,7 @@ import {
 
       <li>
         <a
-          href="https://spraakbanken.gu.se/en/tools/mink/data-policy"
+          href="https://sprakbanken.se/en/platforms/mink/data-policy"
           target="_blank"
         >
           <strong>{{ $t("home.links.privacy.label") }}</strong>
@@ -111,12 +111,8 @@ import {
         <strong>{{ $t("home.otherdata.title") }}</strong>
         {{}}
         <i18n-t keypath="home.otherdata.body" scope="global">
-          <a
-            :href="$t('home.otherdata.sbdata.url')"
-            :title="$t('home.otherdata.sbdata.title')"
-            target="_blank"
-          >
-            {{ $t("home.otherdata.sbdata.label") }}
+          <a :href="$t('home.links.resources.url')" target="_blank">
+            {{ $t("home.links.resources.label") }}
           </a>
           <a
             href="https://vlo.clarin.eu/"
